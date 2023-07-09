@@ -1,0 +1,27 @@
+<% if user_signed_in? %>
+  <%= link_to root_path do %>
+    Home
+  <% end %>
+  <%= link_to about_path do %>
+   About
+  <% end %>
+  <%= link_to new_user_registration_path do %>
+    Sign up
+  <% end %>
+  <%= link_to new_user_session_path do %>
+    Log in
+  <% end %>
+<% else %>
+  <%= link_to root_path do %>
+    Home
+  <% end %>
+  <%= link_to about_path do %>
+   About
+  <% end %>
+  <%= link_to books_path do %>
+    Books
+  <% end %>
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    Log out
+  <% end %>
+<% end %>
