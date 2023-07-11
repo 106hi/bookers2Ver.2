@@ -1,10 +1,10 @@
 <h3>Bookers</h3>
 <% if user_signed_in? %>
-  <%= link_to root_path, class: "text-dark" do %>
+  <%= link_to user_path(current_user), class: "text-dark" do %>
     <i class="fas fa-home"></i>Home
   <% end %>
   <%= link_to users_path, class: "text-dark" do %>
-   <i class="fas fa-users"></i>Users
+    <i class="fas fa-users"></i>Users
   <% end %>
   <%= link_to books_path, class: "text-dark" do %>
     <i class="fas fa-book-open"></i>Books
