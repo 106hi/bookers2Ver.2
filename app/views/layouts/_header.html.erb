@@ -1,28 +1,28 @@
 <h3>Bookers</h3>
 <% if user_signed_in? %>
-  <%= link_to root_path do %>
+  <%= link_to root_path, class: "text-dark" do %>
     <i class="fas fa-home"></i>Home
   <% end %>
-  <%= link_to about_path do %>
+  <%= link_to about_path, class: "text-dark" do %>
    <i class="fas fa-link"></i>About
   <% end %>
-  <%= link_to new_user_registration_path do %>
+  <%= link_to new_user_registration_path, class: "text-dark" do %>
     <i class="fas fa-user-plus"></i>Sign up
   <% end %>
-  <%= link_to new_user_session_path do %>
+  <%= link_to new_user_session_path, class: "text-dark" do %>
     <i class="fas fa-sign-in-alt"></i>Log in
   <% end %>
 <% else %>
-  <%= link_to root_path do %>
+  <%= link_to root_path, class: "text-dark" do %>
     <i class="fas fa-home"></i>Home
   <% end %>
-  <%= link_to about_path do %>
+  <%= link_to about_path, class: "text-dark" do %>
    <i class="fas fa-link"></i>About
   <% end %>
-  <%= link_to books_path do %>
+  <%= link_to books_path, class: "text-dark" do %>
     <i class="fas fa-book-open"></i>Books
   <% end %>
-  <%= link_to destroy_user_session_path, method: :delete do %>
+  <%= link_to destroy_user_session_path, method: :delete, class: "text-dark" do %>
     <i class="fas fa-sign-out-alt"></i>Log out
   <% end %>
 <% end %>
