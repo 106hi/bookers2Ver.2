@@ -3,14 +3,14 @@
   <%= link_to root_path, class: "text-dark" do %>
     <i class="fas fa-home"></i>Home
   <% end %>
-  <%= link_to about_path, class: "text-dark" do %>
-   <i class="fas fa-link"></i>About
+  <%= link_to users_path, class: "text-dark" do %>
+   <i class="fas fa-users"></i>Users
   <% end %>
-  <%= link_to new_user_registration_path, class: "text-dark" do %>
-    <i class="fas fa-user-plus"></i>Sign up
+  <%= link_to books_path, class: "text-dark" do %>
+    <i class="fas fa-book-open"></i>Books
   <% end %>
-  <%= link_to new_user_session_path, class: "text-dark" do %>
-    <i class="fas fa-sign-in-alt"></i>Log in
+  <%= link_to destroy_user_session_path, method: :delete, class: "text-dark" do %>
+    <i class="fas fa-sign-out-alt"></i>Log out
   <% end %>
 <% else %>
   <%= link_to root_path, class: "text-dark" do %>
@@ -19,10 +19,10 @@
   <%= link_to about_path, class: "text-dark" do %>
    <i class="fas fa-link"></i>About
   <% end %>
-  <%= link_to books_path, class: "text-dark" do %>
-    <i class="fas fa-book-open"></i>Books
+  <%= link_to new_user_registration_path, class: "text-dark" do %>
+    <i class="fas fa-user-plus"></i>Sign up
   <% end %>
-  <%= link_to destroy_user_session_path, method: :delete, class: "text-dark" do %>
-    <i class="fas fa-sign-out-alt"></i>Log out
+  <%= link_to new_user_session_path, class: "text-dark" do %>
+    <i class="fas fa-sign-in-alt"></i>Log in
   <% end %>
 <% end %>
