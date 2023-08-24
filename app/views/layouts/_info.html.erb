@@ -1,0 +1,13 @@
+<h1>User info</h1>
+<%= form_with model: user do |f| %>
+  <table>
+    <tr>
+      <th>name</th>
+      <td><%= f.name %></td>
+    </tr>
+    <tr>
+      <th>introduction</th>
+      <td><%= f.introduction %></td>
+    </tr>
+  </table>
+<% end %>
