@@ -6,7 +6,7 @@
     </div>
     <div class="col-8">
       <h1>Users</h1>
-      <table>
+      <table class="table">
         <thead>
           <tr>
             <th>image</th>
@@ -17,7 +17,7 @@
         <tbody>
           <% @users.each do |user| %>
             <tr>
-              <td><%= image_tag user.get_profile_image, size:'50x50' %></td>
+              <td><%= image_tag user.get_profile_image, size:'75x75' %></td>
               <td><%= user.name %></td>
               <td><%= link_to 'Show', user %></td>
             </tr>
