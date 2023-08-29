@@ -1,4 +1,4 @@
-<script stc="FadeIn.js"></script>
+<script src="fade_in.js"></script>
 <div class="container">
   <div class="row">
     <div class="col-3">
@@ -8,7 +8,7 @@
     <div class="col-8 offset-1">
       <h1>Books</h1>
       <% @books.each do |book| %>
-        <div class="card mb-3" style="width: 19rem">
+        <div class="card mb-3 fade-in fade-in-up scroll-in" style="width: 19rem">
           <div><%= image_tag book.user.get_profile_image %></div>
           <div class="card-body">
             <h5 class="card-title"><%= link_to book.title,book %></h5>

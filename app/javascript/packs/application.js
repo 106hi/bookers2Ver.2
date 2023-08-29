@@ -12,6 +12,7 @@ import "jquery";
 import "popper.js";
 import "bootstrap";
 import "../stylesheets/application";
+import "fade_in.js";
 
 Rails.start()
 Turbolinks.start()
