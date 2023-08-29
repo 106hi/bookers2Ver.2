@@ -7,25 +7,15 @@
     </div>
     <div class="col-8 offset-1">
       <h1>Books</h1>
-      <table class="table">
-        <thead>
-          <tr>
-            <th width="10%"></th>
-            <th width="30%">Title</th>
-            <th>Opinion</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @books.each do |book| %>
-            <tr class="fade-in fade-in-up scroll-in">
-              <td><%= image_tag book.user.get_profile_image, size:'75x75' %></td>
-              <td><%= link_to book.title,book %></td>
-              <td><%= book.body %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
+      <% @books.each do |book| %>
+        <div class="card mb-3" style="width: 19rem">
+          <div><%= image_tag book.user.get_profile_image %></div>
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to book.title,book %></h5>
+            <p class="card-text"><%= book.body %></p>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
